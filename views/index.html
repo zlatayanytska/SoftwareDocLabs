@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yanytska Zlata</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap-4.4.1-dist/css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="main">
+  <h1>Add new <span class="badge badge-secondary">USER</span></h1>
+  <form>
+    <div class="form-group">
+      <label for="first_name">First name</label>
+      <input type="text" class="form-control" id="first_name" placeholder="Enter first name">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last name</label>
+      <input type="text" class="form-control" id="last_name" placeholder="Enter last name">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" placeholder="Enter country">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <button id="add-button" class="btn btn-primary">Add</button>
+  </form>
+  <div>
+    <h1><span class="badge badge-secondary">STEAM USERS</span></h1>
+  </div>
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody id="users-list">
+    </tbody>
+  </table>
+</div>
+  <script src="css/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/api.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
+
